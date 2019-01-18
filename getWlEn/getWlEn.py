@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+# Coded by gr13r
 # Open source 
+
 from bs4 import BeautifulSoup
 import urllib.request
 paner = '''
@@ -10,8 +12,8 @@ http://www.oxfordlearnersdictionaries.com
            | |   | |  | | | |  ___|       
   __ _  ___| |_  | |  | | | | |__ _ __    
  / _` |/ _ \ __| | |/\| | | |  __| '_ \   
-| (_| |  __/ |_  \  /\  / | | |__| | | |_ 
- \__, |\___|\__|  \/  \/|_| \____/_| |_(_)
+| (_| |  __/ |_  \  /\  / | | |__| | | |
+ \__, |\___|\__|  \/  \/|_| \____/_| |_|
   __/ |                                   
  |___/                                    
 
