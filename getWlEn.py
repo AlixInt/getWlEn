@@ -4,6 +4,19 @@
 # ModuleNotFoundError
 from bs4 import BeautifulSoup
 import urllib.request
+
+def read_r():
+	are = str(input("Are You Display (wordlist-English) [y|n] ? "))
+	if are == "" or are == " " or are is None or are == "y" or are == "Y":
+		opWE = open('wordlist-English.txt','r')
+		print(opWE.read())
+		opWE.close()
+	elif are == "n" or are == "N":
+		exit(1)
+	else:
+		exit(1)
+
+
 banner = '''
 Link GitHub : https://github.com/AlixInt/getWlEn.git
 [+] getWlEn.
@@ -37,4 +50,4 @@ for url in urls:
 			filewe.write(line)
 			filewe.close()
 print("[+] Completed .")
-	
+read_r()
