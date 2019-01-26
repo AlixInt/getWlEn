@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-# Coded by gr13r
+# Coded by Eng:gr13r (E-8661
 # Open source 
 # ModuleNotFoundError
 from bs4 import BeautifulSoup
 import urllib.request
-paner = '''
-http://www.oxfordlearnersdictionaries.com
-[get word list English on {oxfordlearnersdictionaries.com} ***  ***]
+banner = '''
+Link GitHub : https://github.com/AlixInt/getWlEn.git
+[+] getWlEn.
+[*] coded by Eng:gr13r (E-8661
 
             _     _    _ _   _____        
            | |   | |  | | | |  ___|       
@@ -17,10 +18,11 @@ http://www.oxfordlearnersdictionaries.com
   __/ |                                   
  |___/                                    
 
-[+] getWlEn.
+
+[*]- Started ...
 '''
 urls = ['http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_A-B/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_A-B/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_A-B/?page=3','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_A-B/?page=4','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_A-B/?page=5','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_C-D/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_C-D/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_C-D/?page=3','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_C-D/?page=4','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_C-D/?page=5','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_C-D/?page=6','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_C-D/?page=7','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_E-G/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_E-G/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_E-G/?page=3','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_E-G/?page=4','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_E-G/?page=5','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_E-G/?page=6','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_H-K/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_H-K/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_H-K/?page=3','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_H-K/?page=4','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_L-N/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_L-N/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_L-N/?page=3','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_L-N/?page=4','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_O-P/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_O-P/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_O-P/?page=3','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_O-P/?page=4','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_O-P/?page=5','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_Q-R/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_Q-R/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_Q-R/?page=3','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_S/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_S/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_S/?page=3','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_S/?page=4','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_S/?page=5','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_T/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_T/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_T/?page=3','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_U-Z/?page=1','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_U-Z/?page=2','http://www.oxfordlearnersdictionaries.com/wordlist/english/oxford3000/Oxford3000_U-Z/?page=3']
-print("[*] loading...")
+print("{0}[*] loading...".format(banner))
 for url in urls:
 	opurl = urllib.request.urlopen(url)
 	rurl = opurl.read()
@@ -35,3 +37,4 @@ for url in urls:
 			filewe.write(line)
 			filewe.close()
 print("[+] Completed .")
+	
