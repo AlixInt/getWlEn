@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # Coded by gr13r
 # Open source 
-
+# ModuleNotFoundError
 from bs4 import BeautifulSoup
 import urllib.request
 paner = '''
 http://www.oxfordlearnersdictionaries.com
-[get word list English on {oxfordlearnersdictionaries.com} *** ***]
+[get word list English on {oxfordlearnersdictionaries.com} ***  ***]
 
             _     _    _ _   _____        
            | |   | |  | | | |  ___|       
